@@ -7,11 +7,8 @@ namespace App.Web.Mvc.Controllers
         public IActionResult Index()
         {
             return View();
-
         }
-        public IActionResult Search( string query, int page)
-
-
+        public IActionResult Search(string query, int page)
         {
             return View();
         }

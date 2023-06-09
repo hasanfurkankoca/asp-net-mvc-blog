@@ -1,37 +1,56 @@
-﻿@{
-    ViewData["Title"] = "ANASAYFA";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Revolve - Personal Magazine blog Template</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<!-- THEME CSS
+	================================================== -->
+	<!-- Bootstrap -->
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<!-- Themify -->
+	<link rel="stylesheet" href="/plugins/themify/css/themify-icons.css">
+	<link rel="stylesheet" href="/plugins/slick-carousel/slick-theme.css">
+	<link rel="stylesheet" href="/plugins/slick-carousel/slick.css">
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" href="/plugins/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="/plugins/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="/plugins/magnific-popup/magnific-popup.css">
+	<!-- manin stylesheet -->
+	<link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <partial name="_Header" />
+	<partial name="_Slider" />
+	<partial name="_Articles" />
+	<section class="footer-2 section-padding gray-bg pb-5">
+		<div class="container">
+			<partial name="_Subscribe" />
+			<partial name="_Footer" />			
+		</div>
+	</section>
+	<!-- THEME JAVASCRIPT FILES
+	================================================== -->
+	<!-- initialize jQuery Library -->
+	<script src="/plugins/jquery/jquery.js"></script>
+	<!-- Bootstrap jQuery -->
+	<script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/plugins/bootstrap/js/popper.min.js"></script>
+	<!-- Owl caeousel -->
+	<script src="/plugins/owl-carousel/owl.carousel.min.js"></script>
+	<script src="/plugins/slick-carousel/slick.min.js"></script>
+	<script src="/plugins/magnific-popup/magnific-popup.js"></script>
+	<!-- Instagram Feed Js -->
+	<script src="/plugins/instafeed-js/instafeed.min.js"></script>
+	<!-- Google Map -->
+	<script src="maps/api/js_key_AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw.js"></script>
+	<script src="/plugins/google-map/gmap.js"></script>
+	<!-- main js -->
+	<script src="js/custom.js"></script>
 
-<div class="text-center">
-    <h1 class="display-4">H.Furkan Koca</h1>
-    <h2> ANASAYFA</h2>
-    <hr />
-</div>
-
-    <h3> Görev 5</h3>
-
-  
-    <h3>Task 1</h3>
-    <h4>Projenin oluşturulması ve Repo'ya eklenmesi</h4>
-    <ul >
-       
-        <li>Github üzerinde asp net-mvc-blog isminde bir repo oluşturun.</li>
-        <li>Repo'yu Github proje sayfasından Clone yaparak bilgisayarınıza indirin.</li>
-        <li>Visual Studio için standart olarak kullandığımız [.gitignore](https://raw.githubusercontent.com/github/gitignore/main/VisualStudio.gitignore) dosyasını proje klasöründe ana dizinde .gitignore olarak kaydedin.</li>
-        <li>Bilgisayarınıza indirdiğiniz klasör içerisinde Visual Studio ile AspNetMvcBlog isminde bir Solution oluşturun.</li>
-        <li>Bu solution içerisinde App.Web.Mvc isminde bir MVC projesi oluşturun.</li>
-        <li>Proje dosyalarını Github'a gönderin (push).</li>
-    </ul>
-    <br />
-    <h3>Task 2</h3>
-    <h4>Controller ve View dosyalarının oluşturulması</h4>
-    <ul>
-    <li>Not: Bu task Task 1 tamamlandıktan sonra yapılacaktır.</li>
-    <li>Not: Bu task her controller farklı öğrenci tarafından paylaşılarak yapılabilir.</li>
-    <li>Projenin son halini Github'dan Clone yaparak bilgisayarınıza indirin.</li>
-    <li>Daha önce indirdiyseniz son halini alın (pull).</li>
-    </ul>
-    <code>git pull</code>
-    <p>Proje Çalışma Belgesi içerisindeki projenize ait Route tanımlarına göre Controller dosyalarını, controller action'larını ve sadece sayfa başlığı olacak şekilde View dosyalarını oluşturun.</p>
-
+</body>
+</html>
 
